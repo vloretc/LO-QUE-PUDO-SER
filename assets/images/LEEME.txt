@@ -1,0 +1,3 @@
+SVG originales incluidos en script.js. No hacen falta imágenes para empezar.
+Opcional: silueta-izquierda.png y silueta-derecha.png (transparentes, proporción 400x600).
+Cambia CONFIG.silhouetteMode a 'png'. Consulta README.md para alinear los perfiles.

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#080811"><title>Lo que pudo ser — Una experiencia sobre la ausencia</title><link rel="stylesheet" href="style.css?v=20260926f"></head>
+<body>
+<svg class="symbols" aria-hidden="true"><defs>
+<symbol id="palm" viewBox="0 0 32 36"><path d="M9 19V9a2 2 0 014 0v8-12a2 2 0 014 0v12-10a2 2 0 014 0v11-6a2 2 0 014 0v12c0 7-4 10-9 10-4 0-6-2-8-5l-5-8a2.5 2.5 0 014-3l3 4"/></symbol>
+<symbol id="fist" viewBox="0 0 32 36"><path d="M8 19V11a3 3 0 016 0v6-9a3 3 0 016 0v9-7a3 3 0 016 0v13c0 7-4 10-10 10-5 0-8-3-9-7l-2-7c-1-4 3-5 5-2l4 6h6"/></symbol>
+</defs></svg>
+<main id="experience" data-state="rest">
+<div class="grain" aria-hidden="true"></div><div class="halo" id="halo" aria-hidden="true"></div>
+<header><a class="wordmark" href="./" aria-label="Lo que pudo ser, inicio">LO QUE PUDO SER<span>UNA EXPLORACIÓN DE LA AUSENCIA</span></a><div class="header-right"><span class="edition">EXPERIENCIA INTERACTIVA <i>01 / ∞</i></span><button id="sound" class="quiet" hidden aria-pressed="false">Sonido encendido</button><button id="leave" class="quiet" hidden>Salir</button></div></header>
+<div id="scene" aria-hidden="true">
+  <div id="left" class="presence left"></div>
+  <div id="right" class="presence right"></div>
+  <div class="between" id="between"></div>
+  <div id="white-flash"></div>
+</div>
+<section id="intro" class="intro panel visible">
+<p class="eyebrow">SOBRE TODO LO QUE IMAGINAMOS</p><h1>Lo que<br><em>pudo ser.</em></h1>
+<p class="description">Una experiencia interactiva sobre aquello<br class="wide"> que imaginamos, pero nunca sucedió.</p>
+<button id="enter" class="enter">Entrar con cámara <span aria-hidden="true">↗</span></button>
+<p class="privacy">Usa los movimientos de tu mano para acercar y separar las siluetas.<br>La cámara detecta tus gestos, pero el video no se graba ni se almacena.</p>
+<div class="invitation"><span></span> HAY DISTANCIAS QUE SOLO EXISTEN EN NOSOTROS <span></span></div>
+</section>
+<section id="message" class="message panel" aria-live="polite" aria-atomic="true"><svg id="message-icon" class="hand-icon" aria-hidden="true"><use href="#palm"/></svg><h2 id="message-title"></h2><p id="message-detail"></p><small id="message-status"></small><button id="retry" class="enter" hidden>Intentar de nuevo <span>↗</span></button></section>
+<section id="rewind" class="rewind panel"><p class="eyebrow">LO QUE QUEDA DE NOSOTROS</p><h2>¿Y si pudieras volver atrás?</h2><div class="circle-icon"><svg class="ring" viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="36"/><circle id="arc" cx="40" cy="40" r="36"/></svg><svg class="hand-icon" aria-hidden="true"><use href="#fist"/></svg></div><p>Dibuja un círculo con el puño.</p><small id="circle-hint">Un gesto para retroceder el tiempo.</small></section>
+<aside id="controls" class="controls" hidden><p class="eyebrow">GUÍA DE GESTOS</p><div><svg class="hand-icon"><use href="#palm"/></svg><p>Palma abierta<span>Dibuja un círculo · Acerca / Aleja</span></p></div><div><svg class="hand-icon"><use href="#fist"/></svg><p>Puño cerrado<span>Abre y cierra al ritmo del latido</span></p></div><small id="control-hint">Mira tu mano en la cámara<br>mientras haces el gesto.</small></aside>
+<footer><div class="journey"><span id="chapter-number">00</span><span class="hairline"></span><span id="chapter">EL UMBRAL</span></div><p id="footer-note">DOS PRESENCIAS. UNA POSIBILIDAD.</p><button id="tracking" class="quiet" hidden aria-expanded="true">Ocultar seguimiento −</button></footer>
+<aside id="monitor"><div class="monitor-image"><video id="video" playsinline muted></video><canvas id="landmarks"></canvas></div><div class="monitor-label"><span id="gesture-label">Buscando una mano...</span></div><small id="monitor-hint">Procesamiento local · sin grabación</small></aside>
+<p id="toast" role="status"></p>
+<div id="black-fade" aria-hidden="true"></div>
+</main><script src="script.js?v=20260926f" defer></script>
+</body></html>
